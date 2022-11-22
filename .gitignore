@@ -31,5 +31,8 @@
 *.out
 *.app
 
-#Problem Instances
+# Problem Instances
 *.txt
+
+# Solver
+Solver
