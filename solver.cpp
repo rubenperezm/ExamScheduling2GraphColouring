@@ -77,7 +77,6 @@ size_t backGCP(Graph& G, size_t k, size_t B, vector<vector<size_t>>& C, size_t v
     return B;
 }
 
-// TODO rearrange solution
 size_t backGCPv2(Graph& G, size_t k, size_t B, vector<vector<size_t>>& C, size_t vertex, vector<size_t>& S, vector<size_t>&A){
     if (vertex == G.size()){
         if (k < B){ // New best solution
