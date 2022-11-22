@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++14 -Wall -O3
 
 EXES = solver
-OBJS = ${EXES:=.o} solver.o
+OBJS = ${EXES:=.o}
 
 %: %.o
 	${CXX} ${LDFLAGS} -o $@ $^
@@ -15,4 +15,4 @@ run:
 ${OBJS}: generator.hpp graph.hpp translator.hpp
 
 clean:
-	${RM} ${EXES} ${OBJS} core *~
+	${RM} ${EXES} ${OBJS} files/*.txt core *~
